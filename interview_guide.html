@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Medsteps Rebuild - Complete Interview Preparation Guide (A to Z)</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap');
+    
+    :root {
+      --primary: #7c3aed;
+      --primary-dark: #5b21b6;
+      --text: #1e293b;
+      --text-muted: #64748b;
+      --bg: #f8fafc;
+      --border: #e2e8f0;
+    }
+
+    body {
+      font-family: 'Inter', system-ui, -apple-system, sans-serif;
+      color: var(--text);
+      background-color: #ffffff;
+      line-height: 1.6;
+      margin: 0;
+      padding: 0;
+    }
+
+    .container {
+      max-width: 850px;
+      margin: 0 auto;
+      padding: 40px 20px;
+    }
+
+    header {
+      border-bottom: 2px solid var(--primary);
+      padding-bottom: 20px;
+      margin-bottom: 40px;
+    }
+
+    .header-tag {
+      display: inline-block;
+      background: #f5f3ff;
+      color: var(--primary);
+      font-weight: 700;
+      font-size: 11px;
+      text-transform: uppercase;
+      padding: 4px 10px;
+      border-radius: 9999px;
+      margin-bottom: 12px;
+    }
+
+    h1 {
+      font-size: 32px;
+      font-weight: 800;
+      margin: 0 0 10px 0;
+      color: #0f172a;
+    }
+
+    .subtitle {
+      font-size: 16px;
+      color: var(--text-muted);
+      margin: 0;
+    }
+
+    .section-title {
+      font-size: 20px;
+      font-weight: 700;
+      color: #0f172a;
+      border-bottom: 1px solid var(--border);
+      padding-bottom: 8px;
+      margin-top: 40px;
+      margin-bottom: 20px;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+    }
+
+    .question-card {
+      background: #ffffff;
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 24px;
+      margin-bottom: 20px;
+      box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+      page-break-inside: avoid;
+    }
+
+    .question-title {
+      font-size: 16px;
+      font-weight: 700;
+      color: var(--primary-dark);
+      margin: 0 0 12px 0;
+      display: flex;
+      gap: 10px;
+    }
+
+    .question-title span {
+      background: var(--primary);
+      color: white;
+      font-size: 11px;
+      padding: 2px 8px;
+      border-radius: 4px;
+      height: fit-content;
+    }
+
+    .answer {
+      font-size: 14px;
+      color: var(--text);
+      margin-bottom: 16px;
+    }
+
+    .expectation {
+      background: #f8fafc;
+      border-left: 3px solid #38bdf8;
+      padding: 12px 16px;
+      font-size: 13px;
+      color: #334155;
+      border-radius: 0 8px 8px 0;
+    }
+
+    .expectation strong {
+      color: #0369a1;
+    }
+
+    .tips-box {
+      background: #f0fdf4;
+      border: 1px solid #bbf7d0;
+      border-radius: 12px;
+      padding: 20px;
+      margin-bottom: 30px;
+    }
+
+    .tips-box h3 {
+      color: #15803d;
+      margin: 0 0 10px 0;
+      font-size: 16px;
+    }
+
+    .tips-box ul {
+      margin: 0;
+      padding-left: 20px;
+      font-size: 14px;
+      color: #166534;
+    }
+
+    .tips-box li {
+      margin-bottom: 6px;
+    }
+
+    footer-note {
+      display: block;
+      text-align: center;
+      margin-top: 60px;
+      font-size: 12px;
+      color: var(--text-muted);
+      border-top: 1px solid var(--border);
+      padding-top: 20px;
+    }
+
+    /* Print styling rules */
+    @media print {
+      body {
+        background-color: #ffffff;
+      }
+      .container {
+        padding: 0;
+        max-width: 100%;
+      }
+      .question-card {
+        border: none;
+        border-bottom: 1px dashed var(--border);
+        box-shadow: none;
+        padding: 15px 0;
+        margin-bottom: 15px;
+      }
+      .tips-box {
+        page-break-inside: avoid;
+      }
+      .section-title {
+        margin-top: 30px;
+      }
+      .no-print {
+        display: none;
+      }
+      header {
+        margin-bottom: 20px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    
+    <div class="tips-box no-print" style="margin-top: 20px;">
+      <h3>🖨️ How to Export this Guide as a PDF:</h3>
+      <ul>
+        <li>Open this file in your web browser (double-click the <code>interview_guide.html</code> file in your folder).</li>
+        <li>Press <strong>Ctrl + P</strong> (Windows) or <strong>Cmd + P</strong> (Mac).</li>
+        <li>Set the destination to <strong>"Save as PDF"</strong>.</li>
+        <li>Under More Settings, check the box for <strong>"Background graphics"</strong> to keep the styling.</li>
+        <li>Click <strong>Save</strong>!</li>
+      </ul>
+    </div>
+
+    <header>
+      <div class="header-tag">A to Z Cheat Sheet</div>
+      <h1>Medsteps Rebuild Interview Guide</h1>
+      <p class="subtitle">Comprehensive Guide: Expectation, Concept, Code Explanations & Technical Architecture</p>
+    </header>
+
+    <div class="tips-box">
+      <h3>💡 Key Strategy: How to Present as a Fresh Graduate/Entry-level Candidate</h3>
+      <ul>
+        <li><strong>Confidence over jargon:</strong> If you don't know a complex term, explain the logic. Interviewers look for clear problem-solving minds.</li>
+        <li><strong>Focus on Clean Code:</strong> Emphasize that you separated features into clean, modular files inside the <code>src/components</code> directory to keep the project readable.</li>
+        <li><strong>Mention performance:</strong> Highlight the use of Tailwind CSS v4 for lighter bundles and inline SVGs instead of unnecessary third-party icon packages.</li>
+      </ul>
+    </div>
+
+    <!-- SECTION 1: ARCHITECTURE -->
+    <div class="section-title">Category 1: Project Architecture & Code Structure</div>
+
+    <div class="question-card">
+      <h3 class="question-title"><span>Q1</span> Explain the directory structure of this project. Why did you choose it?</h3>
+      <div class="answer">
+        "I structured this project using a standard component-driven architecture. The core configurations (Vite config, package.json, Tailwind imports) sit in the root. Inside the <code>src/assets</code> folder, I stored the local image assets. The reusable UI section files like Navbar, Hero, Features, Consultants, and Footer are separated into the <code>src/components/</code> folder. The main <code>App.jsx</code> serves as the parent wrapper that hosts and orchestrates these components."
+      </div>
+      <div class="expectation">
+        <strong>Interviewer Expectation:</strong> They want to see if you understand modular code. Separating sections into components proves that you know how to build maintainable, readable React projects.
+      </div>
+    </div>
+
+    <div class="question-card">
+      <h3 class="question-title"><span>Q2</span> What is the advantage of using Vite over Create React App (CRA)?</h3>
+      <div class="answer">
+        "Vite is significantly faster than Create React App. CRA uses Webpack, which bundles the entire application before starting the dev server. Vite uses native ES Modules (ESM) in the browser to deliver file changes on-demand, which makes development starts and Hot Module Replacement (HMR) instantaneous, regardless of the project size."
+      </div>
+      <div class="expectation">
+        <strong>Interviewer Expectation:</strong> Showing that you know modern bundling tools. Webpack is legacy; Vite is the modern industry standard.
+      </div>
+    </div>
+
+    <!-- SECTION 2: REACT CONCEPTS -->
+    <div class="section-title">Category 2: Core React Concepts</div>
+
+    <div class="question-card">
+      <h3 class="question-title"><span>Q3</span> How does the Light/Dark mode state work in this application?</h3>
+      <div class="answer">
+        "In <code>App.jsx</code>, I defined a state variable: <code>const [darkMode, setDarkMode] = useState(false)</code>. I passed this state and its setter function down to the <code>Navbar</code> component as props. Inside <code>App.jsx</code>, a <code>useEffect</code> hook monitors the <code>darkMode</code> state. Whenever it toggles, it modifies the class list of the HTML root document element (<code>document.documentElement</code>). Adding the <code>.dark</code> class allows Tailwind to trigger all our <code>dark:</code> variant style rules."
+      </div>
+      <div class="expectation">
+        <strong>Interviewer Expectation:</strong> A very common React 19 test. It verifies if you know state sharing, component props, and how React interacts with the global document Object Model (DOM) using effects.
+      </div>
+    </div>
+
+    <div class="question-card">
+      <h3 class="question-title"><span>Q4</span> What is the difference between props and state in React?</h3>
+      <div class="answer">
+        "<strong>State</strong> represents the internal, mutable data managed by a component itself (like the <code>isOpen</code> menu toggle in Navbar). <strong>Props</strong> (short for properties) are read-only variables passed down from a parent component to a child component (like passing <code>darkMode</code> to Navbar) to share configuration."
+      </div>
+      <div class="expectation">
+        <strong>Interviewer Expectation:</strong> Junior-level absolute fundamental check. You must explain that props are immutable (read-only) while state is local and mutable.
+      </div>
+    </div>
+
+    <div class="question-card">
+      <h3 class="question-title"><span>Q5</span> Why did you use functional components and hooks instead of class components?</h3>
+      <div class="answer">
+        "Functional components combined with React Hooks are the modern standard. They make components lighter, reduce boilerplate code (no constructor or complex binding of 'this'), and allow developers to easily reuse stateful logic without changing the component hierarchy."
+      </div>
+      <div class="expectation">
+        <strong>Interviewer Expectation:</strong> Verifying if your knowledge is up-to-date. Class components are legacy (pre-2019). Functional components are standard.
+      </div>
+    </div>
+
+    <!-- SECTION 3: TAILWIND & CSS -->
+    <div class="section-title">Category 3: Tailwind CSS & Responsive Styling</div>
+
+    <div class="question-card">
+      <h3 class="question-title"><span>Q6</span> How does Tailwind CSS v4 differ in configuration compared to v3?</h3>
+      <div class="answer">
+        "In Tailwind v3, configurations were handled in a JavaScript file (<code>tailwind.config.js</code>). In Tailwind v4, the configuration is CSS-first. We import Tailwind directly in <code>index.css</code> using <code>@import 'tailwindcss';</code> and customize the theme variables (like fonts, custom colors, and custom variants) directly inside a CSS block called <code>@theme { ... }</code>. This eliminates the need for separate JS configuration files."
+      </div>
+      <div class="expectation">
+        <strong>Interviewer Expectation:</strong> Shows that you keep up with the latest web standards. Tailwind v4 is the newest release and makes configurations much cleaner.
+      </div>
+    </div>
+
+    <div class="question-card">
+      <h3 class="question-title"><span>Q7</span> How did you implement responsive design in the Bento Grid layout?</h3>
+      <div class="answer">
+        "I used Tailwind's mobile-first breakpoints. The Bento Grid in <code>Features.jsx</code> uses: <code>grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6</code>. 
+        On mobile screens, it defaults to one single column. On tablets (medium screens at 768px), it switches to 2 columns (<code>md:grid-cols-2</code>). On laptops/desktops (large screens at 1024px), it expands to 3 columns (<code>lg:grid-cols-3</code>). I also used <code>md:col-span-2</code> on the dashboard card to make it dynamically stretch wider on larger screens."
+      </div>
+      <div class="expectation">
+        <strong>Interviewer Expectation:</strong> Tests your practical CSS Grid and flexbox layout skills. Responsive layout grids are crucial for modern web development.
+      </div>
+    </div>
+
+    <div class="question-card">
+      <h3 class="question-title"><span>Q8</span> Why did you use inline SVGs for social media icons instead of importing them from Lucide React?</h3>
+      <div class="answer">
+        "Lucide React recently deprecated and removed brand logos (like Facebook, Twitter, and LinkedIn) to avoid trademark conflicts and reduce compile sizes. To solve this without adding heavy third-party packages, I wrote lightweight, custom inline SVG elements. They are fully responsive and adapt to hover effects instantly using the Tailwind class <code>fill-current</code>."
+      </div>
+      <div class="expectation">
+        <strong>Interviewer Expectation:</strong> A brilliant answer that demonstrates troubleshooting skills, performance awareness, and understanding of dependency management.
+      </div>
+    </div>
+
+    <!-- SECTION 4: CODE WALKTHROUGH -->
+    <div class="section-title">Category 4: Practical Code Explanations</div>
+
+    <div class="question-card">
+      <h3 class="question-title"><span>Q9</span> Walk me through the implementation of the Mobile Toggle Menu in the Navbar.</h3>
+      <div class="answer">
+        "In <code>Navbar.jsx</code>, I set up a state: <code>const [isOpen, setIsOpen] = useState(false)</code>. 
+        On mobile view, I render a hamburger button that toggles `isOpen` on click. Below the header, I write conditional rendering logic: <code>{isOpen && ( ... )}</code>. When `isOpen` is true, the drawer container opens, showing the navigation links in a vertical stack. Clicking any link closes the drawer automatically."
+      </div>
+      <div class="expectation">
+        <strong>Interviewer Expectation:</strong> Tests if you can explain interactive components line-by-line. Keep your answer simple and follow the state-to-DOM logic.
+      </div>
+    </div>
+
+    <div class="question-card">
+      <h3 class="question-title"><span>Q10</span> In Consultants.jsx, how did you render the consultant list?</h3>
+      <div class="answer">
+        "I created an array of objects called `consultants` containing the doctor's details (name, specialty, rating, reviews count, and image source). In the JSX template, I used the JavaScript `.map()` method to loop over this array. For each doctor, it renders a styled card layout with unique keys (<code>key={doctor.id}</code>). This makes the code highly dry (Don't Repeat Yourself) and easy to scale if we fetch the doctors list from an API later."
+      </div>
+      <div class="expectation">
+        <strong>Interviewer Expectation:</strong> Map loops are fundamental in React. Always mention the use of the `key` prop, explaining that it helps React's virtual DOM track which items changed, added, or removed.
+      </div>
+    </div>
+
+    <footer-note>
+      Developed for Medsteps Landing Page Rebuild Prep • Good Luck with your Interview!
+    </footer-note>
+
+  </div>
+
+</body>
+</html>
