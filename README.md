@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Medsteps Landing Page Rebuild
 
 A high-performance, modern, and fully responsive medical services landing page built using **React.js (Functional Components)** and **Tailwind CSS v4**.
@@ -95,3 +96,6 @@ Lucide Icons deprecated and removed brand-specific logos (such as Facebook, Twit
 To handle this cleanly:
 - We write inline `<svg>` blocks inside [Footer.jsx](file:///c:/Users/Asus/OneDrive/Desktop/aevevo%20tech/aevevo_landing_page/Medsteps/src/components/Footer.jsx).
 - We set `fill-current` so that they automatically adapt to hover text colors, keeping the code simple, customizable, and dependency-free.
+=======
+# Medicare
+>>>>>>> 568ed0ec2af9b60b784714046f19432207e24535
